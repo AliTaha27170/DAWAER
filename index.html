@@ -1,642 +1,1094 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!--
-     - Roxy: Bootstrap template by GettTemplates.com
-     - https://gettemplates.co/roxy
-    -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Roxy by GetTemplates.co</title>
-    <meta name="description" content="Roxy">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Create a stylish landing page for your business startup and get leads for the offered services with this HTML landing page template.">
+    <meta name="author" content="Inovatik">
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/select2/select2.min.css">
-    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
-     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
+    <!-- Website Title -->
+    <title>DAWAER</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css" />
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
 </head>
-<body data-spy="scroll" data-target="#navbar" class="static-layout">
-	<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
-    <div class="container">
-        <a class="navbar-brand d-flex align-items-center text-white" href="/">
-            <h3 class="font-weight-bolder mb-0">ROXY</h3>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="lnr lnr-menu"></span>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/1.3.png" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar-nav-header">
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link page-scroll" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link page-scroll" href="#pricing">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link page-scroll" href="#request">Request</a>
                 </li>
+
+                <!-- Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">Terms Conditions</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">Privacy Policy</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+
                 <li class="nav-item">
-                    <a id="side-search-open" class="nav-link" href="#">
-                        <span class="lnr lnr-magnifier"></span>
-                    </a>
-                </li>
-                 <li class="nav-item only-desktop">
-                    <a class="nav-link" id="side-nav-open" href="#">
-                        <span class="lnr lnr-menu"></span>
-                    </a>
+                    <a class="nav-link page-scroll" href="#contact">Contact</a>
                 </li>
             </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x facebook"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fas fa-circle fa-stack-2x twitter"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
         </div>
-    </div>
-</nav>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
 
-<div id="side-nav" class="sidenav">
-	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
-	
-	<div class="sidenav-content">
-		<p>
-			Kuncen WB1, Wirobrajan 10010, DIY
-		</p>
-		<p>
-			<span class="fs-16 primary-color">(+68) 120034509</span>
-		</p>
-		<p>info@yourdomain.com</p>
-	</div>
-</div><div id="side-search" class="sidenav">
-	<a href="javascript:void(0)" id="side-search-close">&times;</a>
-	<div class="sidenav-content">
-		<form action="">
 
-			<div class="input-group md-form form-sm form-2 pl-0">
-			  <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
-			  <div class="input-group-append">
-			    <button class="input-group-text red lighten-3" id="basic-text1">
-			    	<span class="lnr lnr-magnifier"></span>
-			    </button>
-			  </div>
-			</div>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1><span class="turquoise">DAWAER <br> </span>Marketing & Events Solutions</h1>
+                            <!-- <p class="p-large">Use Evolo free landing page template to promote your business startup and generate leads for the offered services</p> -->
+                       <div class="down">
+                       <a href="#about"><i class="fas fa-angle-double-down fa-2x"></i></a></div>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <!-- <img class="img-fluid" src="images/1.2.png" alt="alternative"> -->
+                        </div><!--  end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
 
-		</form>
-	</div>
-	
-</div>	<div class="jumbotron d-flex align-items-center">
-  <div class="container text-center">
-    <h1 class="display-1 mb-4">RO<br>XY</h1>
-  </div>
-  <div class="rectangle-1"></div>
-  <div class="rectangle-2"></div>
-  <div class="rectangle-transparent-1"></div>
-  <div class="rectangle-transparent-2"></div>
-  <div class="circle-1"></div>
-  <div class="circle-2"></div>
-  <div class="circle-3"></div>
-  <div class="triangle triangle-1">
-  	<img src="img/obj_triangle.png" alt="">
-  </div>
-  <div class="triangle triangle-2">
-  	<img src="img/obj_triangle.png" alt="">
-  </div>
-  <div class="triangle triangle-3">
-  	<img src="img/obj_triangle.png" alt="">
-  </div>
-  <div class="triangle triangle-4">
-  	<img src="img/obj_triangle.png" alt="">
-  </div>
-</div>	<!-- Features Section-->
-<section id="features" class="bg-white">
-    <div class="container">
-        <div class="section-content">
-            <!-- Section Title -->
-            <div class="title-wrap mb-5" data-aos="fade-up">
-                <h2 class="section-title">
-                    A template built by <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a>
-                </h2>
-                <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>
-            </div>
-            <!-- End of Section Title -->
+
+    <!-- Details 1 -->
+    <div class="basic-1">
+    <h2 id="about" class="main-title">About Us</h2>
+        <div class="container">
+            <div class="row"> 
+                <!-- <h3 class="main-title">Main-title</h3> -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <p><h6>WE ARE THE BRAND ACTIVATION AGENCY, OPERATING SINCE 2017<br>
+                            WE STRATEGICALLY DESIGN LIFE EXPERIENCES AND
+                            UNTRADITIONAL UNIQUE IDEAS THAT ACTIVATE BRANDS
+                            ACROSS ALL COMMUNICATION CHANNELS
+                            WE ARE PERSISTENT, CONSISTENT, CREATIVE,
+                            AND FLEXIBLE</h6>
+                            </p>
+                        </a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/a3.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details 1 -->
+
+    
+    <!-- Details 2 -->
+    <div class="basic-2">
+        <h2 class="main-title">Mission & Vision</h2>
+        <div class="container">
             <div class="row">
-                <!-- Features Holder-->
-                <div class="col-md-10 offset-md-1 features-holder">
-                    <div class="row">
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-12 text-center mt-4">
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-cog fs-40"></i>
-                                </div>
-                                <h4>Easy to Customize</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                            </div>
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-frame-contract fs-40"></i>
-                                </div>
-                                <h4>Pixel Perfect</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                            </div>
-                        </div>
-                        <!-- End of Feature Item -->
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-12 text-center">
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-bubble fs-40"></i>
-                                </div>
-                                <h4>Full Support</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                            </div>
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-magic-wand fs-40"></i>
-                                </div>
-                                <h4>Clean Design</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                            </div>
-                        </div>
-                        <!-- End of Feature Item -->
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-12 text-center mt-4">
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-clock fs-40"></i>
-                                </div>
-                                <h4>Ontime Project</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                            </div>
-                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
-                                <div class="my-4">
-                                    <i class="lnr lnr-thumbs-up fs-40"></i>
-                                </div>
-                                <h4>Built with SASS</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                            </div>
-                        </div>
-                        <!-- End of Feature Item -->
-                    </div>
-                </div>
-                <!-- End of Features Holder-->
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Features Section-->	<section id="section-featurettes" class="featurettes overlay bg-fixed" style="background-image: url(img/bg.jpg);">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/a10.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <p><h6>DAWAER RELAY ON GROUP OF VALUES IN BUILDING
+                            ITS RELATIONS WITH ITS PARTNERS, UNDERSTANDING
+                            THE BUSINESS NATURE, AND ANSWERING EVERY RE-
+                            QUIREMENT IN THE HIGHEST LEVEL OF QUALITY
+                            AND CREATIVITY
+                            </h6>
+                            </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 2 -->
 
-    <div class="container">
-        <div class="section-content">
+
+    <!-- Details 1.1 -->
+    <div class="basic-1">
+        <h2 class="main-title">Our Services</h2>
+        <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="row align-items-center text-white">
+                <div class="col-lg-3">
+                    <div class="text-container">
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Design & Business identity</h6></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Event Management</h6></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Interior Design, 2D & 3D Design.</h6></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Identity Printing.</h6></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Identity Design.</h6></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Graphic Design.</h6></div>
+                            </li>
+                        </ul>
+                        </a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                
+                <div class="col-lg-3">
+                    <div class="text-container">
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Design & Business identity</h6></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Event Management</h6></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Interior Design, 2D & 3D Design.</h6></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Identity Printing.</h6></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Identity Design.</h6></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Graphic Design.</h6></div>
+                            </li>
+                        </ul>
+                        </a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/a2.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details 1.1 -->
 
-                        <div class="col-md-4 offset-md-2 col-sm-6" data-aos="fade-right">
-                            <h4 class="mb-4">Capture every moments and share it to all your friends</h4>
-                            <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet.</p>
-                            <button type="button" class="btn btn-outline-primary">FEATURES</button>
-                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
 
-                        <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="flip-right">
-                            <img class="my-5" src="img/app-profile-mockup.png" alt="">
-                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
-
-                    </div><!--/ .featurettes-item -->
-
-                </div><!--/ .col-md-12 -->
-
-            </div><!--/ .row -->
-        </div>
-    </div><!--/ .container -->
-
-</section>	<section id="section-featurettes" class="featurettes">
-
-    <div class="container">
-        <div class="section-content">
+    <!-- Details 1.1 -->
+    <div class="basic-1">
+        <h2 class="main-title">Desgin & Business Identity</h2>
+        <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <p><h6>We are the Best Partner to run out your Identity
+                            Branding design and Execution:
+                            </h6>
+                            </p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Identity Design.</h6></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Graphic Design.</h6></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Interior Design, 2D & 3D Design.</h6></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><h6>Identity Printing.</h6></div>
+                            </li>
+                        </ul>
+                        </a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/a11.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details 1.1 -->
 
-                        <div class="col-md-4 offset-md-2 col-sm-6" data-aos="flip-left">
-                            <img class="my-5" src="img/app-profile-mockup.png" alt="">
-                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
-
-                        <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="fade-left">
-                            <h4 class="mb-4">Capture every moments and share it to all your friends</h4>
-                            <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet.</p>
-                            <div class="progress mb-3">
-                                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">HTML5 95%</div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">CSS3 90%</div>
-                            </div>
-                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
-
-                    </div><!--/ .featurettes-item -->
-
-                </div><!--/ .col-md-12 -->
-
-            </div><!--/ .row -->
-        </div>
-    </div><!--/ .container -->
-
-</section>	<!-- Testimonial Section-->
-<section id="testimonial" class="section-padding bg-fixed bg-white overlay" style="background-image: url(img/bg-white.jpg);">
+<!-- Details 2.1 -->
+<div class="basic-2">
+    <h2 class="main-title">Event Management</h2>
     <div class="container">
-        <div class="section-content" data-aos="fade-up">
-            <div class="heading-section text-center">
-                <h2>
-                    User Testimonials
-                </h2>
-            </div>
-            <div class="row">
-                <!-- Testimonial -->
-                <div class="testi-content testi-carousel owl-carousel">
-                    <div class="testi-item text-center">
-                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                        <h4 class="testi-text"><b>ROXY</b> is best theme i used so far.<br> It’s ideal for guys without coding knowledge like me!</h4>
-                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
-                            <div class="testi-img mr-2">
-                                <img src="img/testi-1.jpg" alt="">
-                            </div>
-                            <div class="testi-details">
-                                <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
-                                <p class="testi-desc mb-0">Web Designer</p>
-                            </div>
-                        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/a16.png" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Basically we'll teach you step by step what you need to do</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>In order to develop your company and reach new heights</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Everyone will be pleased from stakeholders to employees</h6></div>
+                        </li>
+                    </ul>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of details 2.1 -->
+
+<!-- Details 2.2 -->
+<div class="basic-2">
+    <h2 class="main-title">Promotional Activation</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Marketing Campaign Management.</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Promotion Executions.</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Promotional Ideas.</h6></div>
+                        </li>
                         
-                    </div>
-                    <div class="testi-item text-center">
-                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                        <h4 class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci <br> non doloribus ut, alias doloremque perspiciatis.</h4>
-                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
-                            <div class="testi-img mr-2">
-                                <img src="img/testi-1.jpg" alt="">
-                            </div>
-                            <div class="testi-details">
-                                <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
-                                <p class="testi-desc mb-0">Web Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="testi-item text-center">
-                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
-                        <h4 class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci <br> non doloribus ut, alias doloremque perspiciatis.</h4>
-                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
-                            <div class="testi-img mr-2">
-                                <img src="img/testi-1.jpg" alt="">
-                            </div>
-                            <div class="testi-details">
-                                <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
-                                <p class="testi-desc mb-0">Web Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End of Testimonial -->
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Testimonial Section-->	<!-- Portfolio Section -->
-<section id="portfolio" class="bg-white">
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Brand Activity.</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Sales Support.</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Brand Launching.</h6></div>
+                        </li>
+                    </ul>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/a5.png" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of details 2.2 -->
+
+<!-- Details 2.3 -->
+<div class="basic-2">
+    <h2 class="main-title">Panels External Design</h2>
     <div class="container">
-        <div class="section-content">
-            <!-- Section Title -->
-            <div class="title-wrap">
-                <h2 class="section-title">Our <b>Awesome</b> Works</h2>
-                <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>
-            </div>
-            <!-- End of Section Title -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/a13.png" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Internal & External Signage.</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Restaurants & Coffee Shops Prints.</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>3D & 2D Letters.</h6></div>
+                        </li>
+                        
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Customized Logo</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Commercial Design & Execution</h6></div>
+                        </li>
+                    </ul>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of details 2.3 -->
+
+<!-- Details 2.4 -->
+<div class="basic-2">
+    <h2 class="main-title">Commercial Production</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/2.1.png" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Videograph Production</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"> <h6>Photograph Production</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Campaign Implementing</h6></div>
+                        </li>
+                    </ul>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of details 2.4 -->
+
+<!-- Details 2.5 -->
+<div class="basic-2">
+    <h2 class="main-title">Internal & Extenal Signage    </h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/2.2.png" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>DirectIonal Signage Design & Execution</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Company Signage</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Commercial Complex Signage</h6></div>
+                        </li>
+                        
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Custom LED Sign</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Shop Front Signage</h6></div>
+                        </li>
+                    </ul>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of details 2.5 -->
+
+<!-- Details 2.6 -->
+<div class="basic-2">
+    <h2 class="main-title">Exhibitions & Conferences    </h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/2.3.png" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Conferences Solutions Operations</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Kiosk Design & Execution</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Labors & Logistics Support</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Booth Executions</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Booth Designing</h6></div>
+                        </li>
+                    </ul>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of details 2.6 -->
+
+<!-- Details 2.7 -->
+<div class="basic-2">
+    <h2 class="main-title">Marketing Campaigns    </h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/2.4.png" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Window Dressing</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Commercial Branding</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Identity Branding</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Brand Awareness Campaigns</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Community Branding</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Corporate Campaigns</h6></div>
+                        </li>
+                    </ul>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of details 2.7 -->
+
+<!-- Details 2.8 -->
+<div class="basic-2">
+    <h2 class="main-title">Interior Design 3D &2D    </h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/2.5.png" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Commercial Interior Design</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>3D Design</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>2D Design</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Offices Design</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Cadding Applied Design</h6></div>
+                        </li>
+                    </ul>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of details 2.8 -->
+
+<!-- Details 2.9 -->
+<div class="basic-2">
+    <h2 class="main-title">Packaging    </h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/2.6.png" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Identity Packaging</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Resturent & Cafe Packaging</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Flyers & Office Prints</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Warehouse Solutions</h6></div>
+                        </li>
+                    </ul>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of details 2.9 -->
+
+<!-- Details 3 -->
+<div class="basic-2">
+    <h2 class="main-title">Display Units    </h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/2.7.png" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Display Stands</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Area Branding</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Shelf Dressing</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Window Dressing</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Cross Selling Stands</h6></div>
+                        </li>
+                    </ul>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of details 3 -->
+
+<!-- Details 3.1 -->
+<div class="basic-2">
+    <h2 class="main-title">Promotional Gifts    </h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/2.8.png" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Commercial CoWorkers</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Corporate Gifts</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Gift Boxes</h6></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i>
+                            <div class="media-body"><h6>Trophies</h6></div>
+                        </li>
+                    </ul>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of details 3.1 -->
+
+
+    <!-- Customers -->
+    <div class="slider-1">
+        <div class="container">
             <div class="row">
-                <!-- Portfolio Holder -->
-                <div class="col-md-12 portfolio-holder mt-3">
-                    <!-- Btn Filter -->
-                    <div class="filter-button-group btn-filter d-flex justify-content-center">
-                        <a tabindex="0" class="is-checked" data-filter="*">Show All</a>
-                        <a tabindex="0" data-filter=".minimalism">Minimalism</a>
-                        <a tabindex="0" data-filter=".vintage">Vintage</a>
-                        <a tabindex="0" data-filter=".creative">Creative</a>
-                    </div>
-                    <!-- End of Btn Filter -->
-                    <!-- Portfolio Content -->
-                    <div class="grid-portfolio">
-                        <div class="grid-sizer"></div>
-                        <div class="gutter-sizer"></div>
-                        <!-- Portfolio Item -->
-                        <div class="grid-item minimalism" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-1.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-1.jpg" title="Photo-1">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Camera</h4>
+                <div class="col-lg-12">
+                    <h2 class="main-title">Our Partiners</h2>
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/1.jpg" alt="alternative">
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-                        <!-- End of Portfolio Item -->
-                        <!-- Portfolio Item -->
-                        <div class="grid-item vintage" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-6.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-6.jpg" title="Ship">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Flower</h4>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/2.jpg" alt="alternative">
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-                        <!-- End of Portfolio Item -->
-                        <!-- Portfolio Item -->
-                        <div class="grid-item creative grid-item-height" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-2.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-2.jpg" title="Tracy Portrait">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Breakfast</h4>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/3.jpg" alt="alternative">
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-                        <!-- End of Portfolio Item -->
-                        <!-- Portfolio Item -->
-                        <div class="grid-item creative" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-7.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-7.jpg" title="Guitar">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Chair</h4>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/4.jpg" alt="alternative">
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-                        <!-- End of Portfolio Item -->
-                        <!-- Portfolio Item -->
-                        <div class="grid-item vintage" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-4.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-4.jpg" title="Bookself">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Hidden Book</h4>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/5.jpg" alt="alternative">
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-                        <!-- End of Portfolio Item -->
-                        <!-- Portfolio Item -->
-                        <div class="grid-item creative" data-aos="fade-up">
-                            <div class="grid-item-wrapper">
-                                <img src="img/photo-9.jpg" alt="portfolio-img" class="portfolio-item">
-                                <div class="grid-info">
-                                    <div class="grid-link d-flex justify-content-center">
-                                        <a class="img-pop" data-rel="lightcase" href="img/photo-9.jpg" title="Guitar">
-                                            <span class="lnr lnr-move"></span>
-                                        </a>
-                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
-                                            <span class="lnr lnr-link"></span>
-                                        </a>
-                                    </div>
-                                    <div class="grid-title">
-                                        <h4>Red</h4>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/6.jpg" alt="alternative">
                                     </div>
                                 </div>
+                            </div> <!-- end of swiper-wrapper -->
+                        </div> <!-- end of swiper container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
 
-                            </div>
-                        </div>
-                        <!-- End of Portfolio Item -->
-                    </div>
-                    <!-- End of Portfolio Content -->
-                </div>
-                <!-- End of Portfolio Holder -->
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Portfolio Section -->	<!-- Client Section -->
-<section id="client" class="overlay bg-fixed" style="background-image: url(img/bg.jpg);">
-    <div class="container">
-        <div class="section-content" data-aos="fade-up">
-            <div class="row ">
-                <div class="col-md-12">
-                    <!-- Section Title -->
-                    <div class="title-wrap mb-5">
-                        <h2>Who love to <span> work</span> with us</h2>
-                    </div>
-                    <!-- End of Section Title -->
-                </div>
-                <!-- Client Holder -->
-                <div class="col-md-12 client-holder">
-                    <div class="client-slider owl-carousel">
-                        <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
-                        </div>
-                        <div class="client-item">
-                            <img class="img-responsive" src="img/client.png" alt=" ">
-                        </div>
-                    </div>
-                    <!-- End of Client Holder -->
-                </div>
-            </div>
-        </div>
-</section>
-<!-- End of Client Section -->	<!-- Reservation Section -->
-<section id="reservation" class="bg-white section-content">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-5 offset-lg-1 mb-5 mb-lg-0" data-aos="fade-right">
-                <div class="bg-white p-5 shadow">
-                    <div class="heading-section text-center">
-                        <h2 class="mb-4">
-                            Contact Us
-                        </h2>
-                    </div>
-                    <form method="post" name="contact-us" action="">
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="websiteUrl" name="websiteUrl" placeholder="Website">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your Message ..."></textarea>
-                            </div>
-                            <div class="col-md-12 text-center">
-                                <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-4 offset-lg-1" data-aos="fade-left">
-                <h2 class="mb-4">
-                    Best solution to create any website. Pay once.
-                </h2>
-                <p class="mb-4">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of customers -->
 
-                <ul class="list-inline py-2">
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-rocket"></span>
-                        <p>Fast delivery</p>
-                    </li>
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-magic-wand"></span>
-                        <p>Awesome design</p>
-                    </li>
-                    <li class="list-inline-item text-center">
-                        <span class="lnr fs-40 lnr-cog"></span>
-                        <p>Easy to customize</p>
-                    </li>
-                </ul>
 
-                <a href="#" class="btn btn-link p-0">
-                    <span>PURCHASE NOW</span>
-                    <span class="lnr lnr-arrow-right"></span>
-                </a>
-            </div>
-        </div>
-        
-    </div>
-</section>
-<!-- End of Reservation Section -->	<!-- Features Section-->
-<section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
-    <div class="container">
-        <div class="section-content" data-aos="fade-up">
+
+
+    <!-- Details Lightboxes -->
+    <!-- Details Lightbox 1 -->
+	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="mb-2">Make a beautiful website, or million of them</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, veritatis qui eligendi delectus quia fuga!</p>
-                    <a class="btn btn-outline-primary btn-lg">FEATURES</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Features Section--></div>
-<footer class="mastfoot my-3">
-    <div class="inner container">
-         <div class="row">
-         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
-         		
-         	</div>
-         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
-         		<p class="mx-auto text-center mb-0">&copy; 2019 Roxy. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a>.</p>
-         	</div>
-           
-            <div class="col-lg-4 col-md-12">
-            	<nav class="nav nav-mastfoot justify-content-center">
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-facebook-f"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-twitter"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-instagram"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-linkedin"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="fab fa-youtube"></i>
-	                </a>
-	            </nav>
-            </div>
-            
-        </div>
-    </div>
-</footer>	<!-- External JS -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-	<script src="vendor/bootstrap/popper.min.js"></script>
-	<script src="vendor/bootstrap/bootstrap.min.js"></script>
-	<script src="vendor/select2/select2.min.js "></script>
-	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-	<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
-	<script src="vendor/isotope/isotope.min.js"></script>
-	<script src="vendor/lightcase/lightcase.js"></script>
-	<script src="vendor/waypoints/waypoint.min.js"></script>
-	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	 
-	<!-- Main JS -->
-	<script src="js/app.min.js "></script>
-	<script src="//localhost:35729/livereload.js"></script>
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/details-lightbox-1.svg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Design And Plan</h3>
+                    <hr>
+                    <h5>Core feature</h5>
+                    <p>The emailing module basically will speed up your email marketing operations while offering more subscriber control.</p>
+                    <p>Do you need to build lists for your email campaigns? It just got easier with Evolo.</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">List building framework</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Easy database browsing</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">User administration</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Automate user signup</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Quick formatting tools</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Fast email checking</div>
+                        </li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox 1 -->
+
+    <!-- Details Lightbox 2 -->
+	<div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="container">
+            <div class="row">
+                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/details-lightbox-2.svg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <h3>Search To Optimize</h3>
+                    <hr>
+                    <h5>Core feature</h5>
+                    <p>The emailing module basically will speed up your email marketing operations while offering more subscriber control.</p>
+                    <p>Do you need to build lists for your email campaigns? It just got easier with Evolo.</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">List building framework</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Easy database browsing</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">User administration</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Automate user signup</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Quick formatting tools</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-check"></i><div class="media-body">Fast email checking</div>
+                        </li>
+                    </ul>
+                    <a class="btn-solid-reg mfp-close page-scroll" href="#request">REQUEST</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox 2 -->
+    <!-- end of details lightboxes -->
+
+
+    <!-- Request -->
+    <div id="request" class="form-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Fill The Following Form To Request A Meeting</h2>
+                        <p>Evolo is one of the easiest and feature packed marketing automation apps in the market. Discover what it can do for your business organization right away.</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><strong class="blue">Automate your marketing</strong> activities and get results today</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><strong class="blue">Interact with all your</strong> targeted customers at a personal level</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><strong class="blue">Convince them to buy</strong> your company's awesome products</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i>
+                                <div class="media-body"><strong class="blue">Save precious time</strong> and invest it where you need it the most</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+
+                    <!-- Request Form -->
+                    <div class="form-container">
+                        <form id="requestForm" data-toggle="validator" data-focus="false">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rname" name="rname" required>
+                                <label class="label-control" for="rname">Full name</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="remail" name="remail" required>
+                                <label class="label-control" for="remail">Email</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rphone" name="rphone" required>
+                                <label class="label-control" for="rphone">Phone</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control-select" id="rselect" required>
+                                    <option class="select-option" value="" disabled selected>Interested in...</option>
+                                    <option class="select-option" value="Personal Loan">Starter</option>
+                                    <option class="select-option" value="Car Loan">Medium</option>
+                                    <option class="select-option" value="House Loan">Complete</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>I agree with Evolo's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button">REQUEST</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="rmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
+                    </div> <!-- end of form-container -->
+                    <!-- end of request form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->
+    <!-- end of request -->
+
+
+    <!-- Video -->
+    <div class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Check Out The Video</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
+                                <img class="img-fluid" src="images/video-frame.svg" alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+
+                    <p>This video will show you a case study for one of our <strong>Major Customers</strong> and will help you understand why your startup needs Evolo in this highly competitive market</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of video -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>About Evolo</h4>
+                        <p>We're passionate about offering some of the best business growth services for startups</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Our business partners <a class="turquoise" href="#your-link">startupguide.com</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Read our <a class="turquoise" href="terms-conditions.html">Terms & Conditions</a>, <a class="turquoise" href="privacy-policy.html">Privacy Policy</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Social Media</h4>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-google-plus-g fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Inovatik</a> - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 </html>
