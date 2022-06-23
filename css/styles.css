@@ -44,6 +44,22 @@ Colors:
 /******************************/
 /*     01. General Styles     */
 /******************************/
+*{
+	scroll-behavior: smooth;
+}
+
+
+.li-space-lg li {
+    margin-bottom: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+	.fa-mobile-screen-button:before {
+		content: "\f3cd";
+		position: relative;
+		top: -17px;}
+	
 body,
 html {
     width: 100%;
